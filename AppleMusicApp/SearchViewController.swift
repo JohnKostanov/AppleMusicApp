@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import Alamofire
 
 struct TrackModel {
     var trackName: String
     var artistName: String
 }
 
+
 class SearchViewController: UITableViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
     
-    let tracks = [TrackModel(trackName: "bad guy", artistName: "Billie Eilish"), TrackModel(trackName: "bary y friend", artistName: "Billie Eilish")]
+    let tracks = [TrackModel(trackName: "bad guy", artistName: "Billie Eilish"),
+                 TrackModel(trackName: "bury a friend", artistName: "Billie Eilish")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +30,6 @@ class SearchViewController: UITableViewController {
         setupSearchBar()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
-        
     }
     
     private func setupSearchBar() {
@@ -35,7 +37,6 @@ class SearchViewController: UITableViewController {
         navigationItem.hidesSearchBarWhenScrolling = false
         searchController.searchBar.delegate = self
     }
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tracks.count
@@ -49,12 +50,27 @@ class SearchViewController: UITableViewController {
         cell.imageView?.image = #imageLiteral(resourceName: "Image")
         return cell
     }
+    
 }
-
 
 extension SearchViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
+//        print(searchText)
+        let url = "https://itunes.apple.com/search?term=\(searchText)"
+        
+        Alamofire.AF.request(url).responseData { (dataResponse) in
+            if let error = dataResponse.error {
+                print("Error received requestiong data: \(error.localizedDescription)")
+                return
+            }
+            
+            
+            guard let data = dataResponse.data else { return }
+            let someString = String(data: data, encoding: .utf8)
+            print(someString ?? "")
+        }
+        
     }
+    
 }
