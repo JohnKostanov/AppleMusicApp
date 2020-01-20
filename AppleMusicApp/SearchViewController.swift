@@ -33,6 +33,7 @@ class SearchViewController: UITableViewController {
     private func setupSearchBar() {
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.delegate = self
     }
     
     
@@ -47,5 +48,13 @@ class SearchViewController: UITableViewController {
         cell.textLabel?.numberOfLines = 2
         cell.imageView?.image = #imageLiteral(resourceName: "Image")
         return cell
+    }
+}
+
+
+extension SearchViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
     }
 }
