@@ -15,6 +15,8 @@ struct TrackModel {
 
 class SearchViewController: UITableViewController {
     
+    let searchController = UISearchController(searchResultsController: nil)
+    
     let tracks = [TrackModel(trackName: "bad guy", artistName: "Billie Eilish"), TrackModel(trackName: "bary y friend", artistName: "Billie Eilish")]
     
     override func viewDidLoad() {
@@ -22,9 +24,17 @@ class SearchViewController: UITableViewController {
         
         view.backgroundColor = .white
         
+        setupSearchBar()
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
         
     }
+    
+    private func setupSearchBar() {
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+    }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tracks.count
