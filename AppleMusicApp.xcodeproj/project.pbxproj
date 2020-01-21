@@ -16,6 +16,7 @@
 		524765D223D4E82000584D08 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524765D123D4E82000584D08 /* MainTabBarController.swift */; };
 		524765D423D4E9CA00584D08 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524765D323D4E9CA00584D08 /* SearchViewController.swift */; };
 		52FC058C23D766E300CB983F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC058B23D766E300CB983F /* SearchResponse.swift */; };
+		52FC058E23D7997D00CB983F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC058D23D7997D00CB983F /* NetworkService.swift */; };
 		8845D82DB8BF7C94B71D0469 /* Pods_AppleMusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04CF0062646DFADC7F1DFFF /* Pods_AppleMusicApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		524765D123D4E82000584D08 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		524765D323D4E9CA00584D08 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		52FC058B23D766E300CB983F /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		52FC058D23D7997D00CB983F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		D04CF0062646DFADC7F1DFFF /* Pods_AppleMusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleMusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D652F1642D6DC365B04F8609 /* Pods-AppleMusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleMusicApp.debug.xcconfig"; path = "Target Support Files/Pods-AppleMusicApp/Pods-AppleMusicApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				524765BF23D4E74200584D08 /* SceneDelegate.swift */,
 				524765D123D4E82000584D08 /* MainTabBarController.swift */,
 				524765D323D4E9CA00584D08 /* SearchViewController.swift */,
+				52FC058D23D7997D00CB983F /* NetworkService.swift */,
 				52FC058B23D766E300CB983F /* SearchResponse.swift */,
 				524765C123D4E74200584D08 /* ViewController.swift */,
 				524765C323D4E74200584D08 /* Main.storyboard */,
@@ -221,6 +224,7 @@
 				524765BE23D4E74200584D08 /* AppDelegate.swift in Sources */,
 				524765D223D4E82000584D08 /* MainTabBarController.swift in Sources */,
 				524765C023D4E74200584D08 /* SceneDelegate.swift in Sources */,
+				52FC058E23D7997D00CB983F /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
