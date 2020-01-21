@@ -1,5 +1,5 @@
 //
-//  MusicPresenter.swift
+//  SearchPresenter.swift
 //  AppleMusicApp
 //
 //  Created by  Джон Костанов on 21/01/2020.
@@ -8,15 +8,23 @@
 
 import UIKit
 
-protocol MusicPresentationLogic {
-  func presentData(response: Music.Model.Response.ResponseType)
+protocol SearchPresentationLogic {
+  func presentData(response: Search.Model.Response.ResponseType)
 }
 
-class MusicPresenter: MusicPresentationLogic {
-  weak var viewController: MusicDisplayLogic?
+class SearchPresenter: SearchPresentationLogic {
+  weak var viewController: SearchDisplayLogic?
   
-  func presentData(response: Music.Model.Response.ResponseType) {
+  func presentData(response: Search.Model.Response.ResponseType) {
   
+    switch response {
+    case .some:
+        print("presenter .some")
+    case .presentTracks:
+        print("presenter .presentTracks")
+        viewController?.displayData(viewModel: Search.Model.ViewModel.ViewModelData.displayTracks)
+    
+    }
   }
   
 }

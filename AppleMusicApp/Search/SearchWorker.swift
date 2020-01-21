@@ -1,5 +1,5 @@
 //
-//  MusicWorker.swift
+//  SearchWorker.swift
 //  AppleMusicApp
 //
 //  Created by  Джон Костанов on 21/01/2020.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class MusicService {
+class SearchService {
 
 }

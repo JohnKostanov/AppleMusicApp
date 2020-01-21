@@ -10,27 +10,31 @@
         <!--Search View Controller-->
         <scene sceneID="jiY-bw-qas">
             <objects>
-                <viewController id="cnz-Ch-uCR" customClass="SearchViewController" sceneMemberID="viewController">
+                <viewController id="cnz-Ch-uCR" customClass="SearchViewController" customModule="AppleMusicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XKO-9L-ZfF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nMe-os-fWZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="8" width="414" height="862"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cnz-Ch-uCR" id="b3T-wU-DhG"/>
+                                    <outlet property="delegate" destination="cnz-Ch-uCR" id="ECk-w7-Wbc"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Qtq-oP-XRL" firstAttribute="trailing" secondItem="nMe-os-fWZ" secondAttribute="trailing" id="TrT-9o-89f"/>
                             <constraint firstItem="nMe-os-fWZ" firstAttribute="leading" secondItem="Qtq-oP-XRL" secondAttribute="leading" id="aZ2-hA-iSu"/>
-                            <constraint firstItem="Qtq-oP-XRL" firstAttribute="bottom" secondItem="nMe-os-fWZ" secondAttribute="bottom" id="dIB-Wd-f6X"/>
-                            <constraint firstItem="nMe-os-fWZ" firstAttribute="top" secondItem="XKO-9L-ZfF" secondAttribute="top" id="s8V-hi-ONO"/>
+                            <constraint firstItem="Qtq-oP-XRL" firstAttribute="bottom" secondItem="nMe-os-fWZ" secondAttribute="bottom" constant="-8" id="dIB-Wd-f6X"/>
+                            <constraint firstItem="nMe-os-fWZ" firstAttribute="top" secondItem="XKO-9L-ZfF" secondAttribute="top" constant="8" id="s8V-hi-ONO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qtq-oP-XRL"/>
                     </view>
                     <connections>
-                        <outlet property="table" destination="nMe-os-fWZ" id="4kL-0D-vPn"/>
+                        <outlet property="table" destination="nMe-os-fWZ" id="pyQ-v7-pMt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUf-oA-VgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

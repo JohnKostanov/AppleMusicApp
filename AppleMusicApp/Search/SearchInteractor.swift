@@ -1,5 +1,5 @@
 //
-//  MusicInteractor.swift
+//  SearchInteractor.swift
 //  AppleMusicApp
 //
 //  Created by  Джон Костанов on 21/01/2020.
@@ -8,19 +8,29 @@
 
 import UIKit
 
-protocol MusicBusinessLogic {
-  func makeRequest(request: Music.Model.Request.RequestType)
+protocol SearchBusinessLogic {
+  func makeRequest(request: Search.Model.Request.RequestType)
 }
 
-class MusicInteractor: MusicBusinessLogic {
+class SearchInteractor: SearchBusinessLogic {
 
-  var presenter: MusicPresentationLogic?
-  var service: MusicService?
+  var presenter: SearchPresentationLogic?
+  var service: SearchService?
   
-  func makeRequest(request: Music.Model.Request.RequestType) {
+  func makeRequest(request: Search.Model.Request.RequestType) {
     if service == nil {
-      service = MusicService()
+      service = SearchService()
+    }
+    
+    switch request {
+    case .some:
+        print("interactor .some")
+        presenter?.presentData(response: Search.Model.Response.ResponseType.presentTracks)
+    case .getTracks:
+        print("interactor .getTracks")
+        presenter?.presentData(response: Search.Model.Response.ResponseType.presentTracks)
     }
   }
   
 }
+

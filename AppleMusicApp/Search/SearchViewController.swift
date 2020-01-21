@@ -1,5 +1,5 @@
 //
-//  MusicViewController.swift
+//  SearchViewController.swift
 //  AppleMusicApp
 //
 //  Created by  Джон Костанов on 21/01/2020.
@@ -8,24 +8,27 @@
 
 import UIKit
 
-protocol MusicDisplayLogic: class {
-  func displayData(viewModel: Music.Model.ViewModel.ViewModelData)
+protocol SearchDisplayLogic: class {
+  func displayData(viewModel: Search.Model.ViewModel.ViewModelData)
 }
 
-class MusicViewController: UIViewController, MusicDisplayLogic {
+class SearchViewController: UIViewController, SearchDisplayLogic {
 
-  var interactor: MusicBusinessLogic?
-  var router: (NSObjectProtocol & MusicRoutingLogic)?
-
-    @IBOutlet var table: UITableView!
-  
+  var interactor: SearchBusinessLogic?
+  var router: (NSObjectProtocol & SearchRoutingLogic)?
+    
+    
+    @IBOutlet weak var table: UITableView!
+    
+    let searchController = UISearchController(searchResultsController: nil)
+      
   // MARK: Setup
   
   private func setup() {
     let viewController        = self
-    let interactor            = MusicInteractor()
-    let presenter             = MusicPresenter()
-    let router                = MusicRouter()
+    let interactor            = SearchInteractor()
+    let presenter             = SearchPresenter()
+    let router                = SearchRouter()
     viewController.interactor = interactor
     viewController.router     = router
     interactor.presenter      = presenter
@@ -41,10 +44,52 @@ class MusicViewController: UIViewController, MusicDisplayLogic {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setup()
+    
+    setupTableView()
+    setupSearchBar()
   }
+    
+    private func setupSearchBar() {
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.delegate = self
+    }
+    
+    private func setupTableView() {
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
+    }
   
-  func displayData(viewModel: Music.Model.ViewModel.ViewModelData) {
+  func displayData(viewModel: Search.Model.ViewModel.ViewModelData) {
 
+    switch viewModel {
+    case .some:
+        print("viewController .some")
+    case .displayTracks:
+        print("viewController .displayTracks")
+    }
   }
   
+}
+
+// MARK: - UITableViewDelegate, UITableViewDataSource
+
+extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = table.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+        cell.textLabel?.text = "indexPath: \(indexPath)"
+        return cell
+    }
+}
+
+extension SearchViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        interactor?.makeRequest(request: Search.Model.Request.RequestType.some)
+    }
 }

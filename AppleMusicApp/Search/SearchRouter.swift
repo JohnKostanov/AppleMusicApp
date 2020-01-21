@@ -1,5 +1,5 @@
 //
-//  MusicRouter.swift
+//  SearchRouter.swift
 //  AppleMusicApp
 //
 //  Created by  Джон Костанов on 21/01/2020.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol MusicRoutingLogic {
+protocol SearchRoutingLogic {
 
 }
 
-class MusicRouter: NSObject, MusicRoutingLogic {
+class SearchRouter: NSObject, SearchRoutingLogic {
 
-  weak var viewController: MusicViewController?
+  weak var viewController: SearchViewController?
   
   // MARK: Routing
   
