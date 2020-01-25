@@ -15,7 +15,7 @@ class NetworkService {
     func fetchTracks(searchText: String, competion: @escaping (SearchResponse?) -> Void)  {
         let url = "https://itunes.apple.com/search"
         let parameters = ["term":"\(searchText)",
-            "limit":"100",
+            "limit":"5[[[[0",
             "media":"music"]
         
         Alamofire.AF.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseData { (dataResponse) in
@@ -31,7 +31,7 @@ class NetworkService {
             let decoder = JSONDecoder()
             do {
                 let objects = try decoder.decode(SearchResponse.self, from: data)
-                print("objects: ", objects)
+//                print("objects: ", objects)
                 competion(objects)
                 
             } catch let jsonError {
