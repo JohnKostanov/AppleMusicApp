@@ -7,6 +7,7 @@ target 'AppleMusicApp' do
 
   # Pods for AppleMusicApp
 
-pod 'Alamofire'
+pod 'Alamofire', '~> 5.0.0-rc.3'
+pod 'SDWebImage', '~> 5.0'
 
 end
