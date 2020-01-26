@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521FBC5723DDD90F00B16EFF /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FBC5623DDD90F00B16EFF /* CMTime + Extension.swift */; };
 		524765BE23D4E74200584D08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524765BD23D4E74200584D08 /* AppDelegate.swift */; };
 		524765C023D4E74200584D08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524765BF23D4E74200584D08 /* SceneDelegate.swift */; };
 		524765C223D4E74200584D08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524765C123D4E74200584D08 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		1726D2744BDAE1C5344B51D8 /* Pods-AppleMusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleMusicApp.release.xcconfig"; path = "Target Support Files/Pods-AppleMusicApp/Pods-AppleMusicApp.release.xcconfig"; sourceTree = "<group>"; };
+		521FBC5623DDD90F00B16EFF /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
 		524765BA23D4E74200584D08 /* AppleMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524765BD23D4E74200584D08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		524765BF23D4E74200584D08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				52DD547E23D7B48500998A3D /* UIViewController + Storyboard.swift */,
+				521FBC5623DDD90F00B16EFF /* CMTime + Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				524765D423D4E9CA00584D08 /* SearchMusicViewController.swift in Sources */,
 				52DD548823D7B94000998A3D /* SearchPresenter.swift in Sources */,
 				52C9DB7723DC71C7009694A3 /* FooterView.swift in Sources */,
+				521FBC5723DDD90F00B16EFF /* CMTime + Extension.swift in Sources */,
 				5263418B23D8F90A00C2660E /* TrackCell.swift in Sources */,
 				524765C223D4E74200584D08 /* ViewController.swift in Sources */,
 				52DD548D23D7B94000998A3D /* SearchInteractor.swift in Sources */,
