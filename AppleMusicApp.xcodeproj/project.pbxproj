@@ -18,6 +18,7 @@
 		524765D423D4E9CA00584D08 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524765D323D4E9CA00584D08 /* SearchMusicViewController.swift */; };
 		5263418B23D8F90A00C2660E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263418A23D8F90A00C2660E /* TrackCell.swift */; };
 		5263418D23D8F92600C2660E /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5263418C23D8F92600C2660E /* TrackCell.xib */; };
+		528998AA23DE128D00B5C12B /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528998A923DE128D00B5C12B /* Nib.swift */; };
 		52C9DB7723DC71C7009694A3 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9DB7623DC71C7009694A3 /* FooterView.swift */; };
 		52C9DB7A23DC7B9E009694A3 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9DB7923DC7B9E009694A3 /* TrackDetailView.swift */; };
 		52C9DB7E23DC97BF009694A3 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C9DB7D23DC97BF009694A3 /* TrackDetailView.xib */; };
@@ -49,6 +50,7 @@
 		524765D323D4E9CA00584D08 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
 		5263418A23D8F90A00C2660E /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		5263418C23D8F92600C2660E /* TrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrackCell.xib; path = "../../../../../../../Downloads/10. Creating Track Cells by XIB/IMusic/Search/Cell/TrackCell.xib"; sourceTree = "<group>"; };
+		528998A923DE128D00B5C12B /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 		52C9DB7623DC71C7009694A3 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		52C9DB7923DC7B9E009694A3 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		52C9DB7D23DC97BF009694A3 /* TrackDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrackDetailView.xib; path = "../../../../../../../Downloads/14. Track Detail Design Continued/IMusic/Search/TrackDetailView/TrackDetailView.xib"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				52DD547E23D7B48500998A3D /* UIViewController + Storyboard.swift */,
 				521FBC5623DDD90F00B16EFF /* CMTime + Extension.swift */,
+				528998A923DE128D00B5C12B /* Nib.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				52C9DB7723DC71C7009694A3 /* FooterView.swift in Sources */,
 				521FBC5723DDD90F00B16EFF /* CMTime + Extension.swift in Sources */,
 				5263418B23D8F90A00C2660E /* TrackCell.swift in Sources */,
+				528998AA23DE128D00B5C12B /* Nib.swift in Sources */,
 				524765C223D4E74200584D08 /* ViewController.swift in Sources */,
 				52DD548D23D7B94000998A3D /* SearchInteractor.swift in Sources */,
 				52FC058C23D766E300CB983F /* SearchResponse.swift in Sources */,
