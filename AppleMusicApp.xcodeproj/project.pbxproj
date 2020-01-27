@@ -30,6 +30,7 @@
 		52DD548D23D7B94000998A3D /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD548623D7B94000998A3D /* SearchInteractor.swift */; };
 		52E9CB4323DF6C9200E6F037 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E9CB4223DF6C9200E6F037 /* TrackCell.xib */; };
 		52E9CB4523DF6CC200E6F037 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E9CB4423DF6CC200E6F037 /* TrackDetailView.xib */; };
+		52E9CB4723DF79A000E6F037 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9CB4623DF79A000E6F037 /* Library.swift */; };
 		52FC058C23D766E300CB983F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC058B23D766E300CB983F /* SearchResponse.swift */; };
 		52FC058E23D7997D00CB983F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC058D23D7997D00CB983F /* NetworkService.swift */; };
 		8845D82DB8BF7C94B71D0469 /* Pods_AppleMusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04CF0062646DFADC7F1DFFF /* Pods_AppleMusicApp.framework */; };
@@ -62,6 +63,7 @@
 		52DD548623D7B94000998A3D /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		52E9CB4223DF6C9200E6F037 /* TrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrackCell.xib; path = "../../../../../Курсы SwiftBook/31. Курс - Apple Music App With UIKit And SwiftUI/23. Drag and Drop UIPanGesture/IMusic/Search/Cell/TrackCell.xib"; sourceTree = "<group>"; };
 		52E9CB4423DF6CC200E6F037 /* TrackDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrackDetailView.xib; path = "../../../../../Курсы SwiftBook/31. Курс - Apple Music App With UIKit And SwiftUI/23. Drag and Drop UIPanGesture/IMusic/Search/TrackDetailView/TrackDetailView.xib"; sourceTree = "<group>"; };
+		52E9CB4623DF79A000E6F037 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		52FC058B23D766E300CB983F /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		52FC058D23D7997D00CB983F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		D04CF0062646DFADC7F1DFFF /* Pods_AppleMusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleMusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 				524765BF23D4E74200584D08 /* SceneDelegate.swift */,
 				52DD547B23D7A1C900998A3D /* Services */,
 				524765D123D4E82000584D08 /* MainTabBarController.swift */,
+				52E9CB4623DF79A000E6F037 /* Library.swift */,
 				52DD546C23D7A0AF00998A3D /* Search */,
 				524765D323D4E9CA00584D08 /* SearchMusicViewController.swift */,
 				52FC058B23D766E300CB983F /* SearchResponse.swift */,
@@ -331,6 +334,7 @@
 				524765D223D4E82000584D08 /* MainTabBarController.swift in Sources */,
 				524765C023D4E74200584D08 /* SceneDelegate.swift in Sources */,
 				52FC058E23D7997D00CB983F /* NetworkService.swift in Sources */,
+				52E9CB4723DF79A000E6F037 /* Library.swift in Sources */,
 				52C9DB7A23DC7B9E009694A3 /* TrackDetailView.swift in Sources */,
 				52DD548B23D7B94000998A3D /* SearchModels.swift in Sources */,
 			);
