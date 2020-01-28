@@ -18,6 +18,7 @@
 		524765D423D4E9CA00584D08 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524765D323D4E9CA00584D08 /* SearchMusicViewController.swift */; };
 		5263418B23D8F90A00C2660E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263418A23D8F90A00C2660E /* TrackCell.swift */; };
 		528998AA23DE128D00B5C12B /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528998A923DE128D00B5C12B /* Nib.swift */; };
+		52B1D65923E0C763006F304F /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B1D65823E0C763006F304F /* TrackCell.xib */; };
 		52C9DB7723DC71C7009694A3 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9DB7623DC71C7009694A3 /* FooterView.swift */; };
 		52C9DB7A23DC7B9E009694A3 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9DB7923DC7B9E009694A3 /* TrackDetailView.swift */; };
 		52DD547D23D7A5AD00998A3D /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DD547C23D7A5AD00998A3D /* SearchViewController.storyboard */; };
@@ -28,7 +29,6 @@
 		52DD548B23D7B94000998A3D /* SearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD548423D7B94000998A3D /* SearchModels.swift */; };
 		52DD548C23D7B94000998A3D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD548523D7B94000998A3D /* SearchViewController.swift */; };
 		52DD548D23D7B94000998A3D /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD548623D7B94000998A3D /* SearchInteractor.swift */; };
-		52E9CB4323DF6C9200E6F037 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E9CB4223DF6C9200E6F037 /* TrackCell.xib */; };
 		52E9CB4523DF6CC200E6F037 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E9CB4423DF6CC200E6F037 /* TrackDetailView.xib */; };
 		52E9CB4723DF79A000E6F037 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9CB4623DF79A000E6F037 /* Library.swift */; };
 		52FC058C23D766E300CB983F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC058B23D766E300CB983F /* SearchResponse.swift */; };
@@ -51,6 +51,7 @@
 		524765D323D4E9CA00584D08 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
 		5263418A23D8F90A00C2660E /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		528998A923DE128D00B5C12B /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
+		52B1D65823E0C763006F304F /* TrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrackCell.xib; path = "../../../../../Курсы SwiftBook/31. Курс - Apple Music App With UIKit And SwiftUI/26. Save Tracks with UserDefaults/IMusic/Search/Cell/TrackCell.xib"; sourceTree = "<group>"; };
 		52C9DB7623DC71C7009694A3 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		52C9DB7923DC7B9E009694A3 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		52DD547C23D7A5AD00998A3D /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		52DD548423D7B94000998A3D /* SearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModels.swift; sourceTree = "<group>"; };
 		52DD548523D7B94000998A3D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		52DD548623D7B94000998A3D /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
-		52E9CB4223DF6C9200E6F037 /* TrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrackCell.xib; path = "../../../../../Курсы SwiftBook/31. Курс - Apple Music App With UIKit And SwiftUI/23. Drag and Drop UIPanGesture/IMusic/Search/Cell/TrackCell.xib"; sourceTree = "<group>"; };
 		52E9CB4423DF6CC200E6F037 /* TrackDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrackDetailView.xib; path = "../../../../../Курсы SwiftBook/31. Курс - Apple Music App With UIKit And SwiftUI/23. Drag and Drop UIPanGesture/IMusic/Search/TrackDetailView/TrackDetailView.xib"; sourceTree = "<group>"; };
 		52E9CB4623DF79A000E6F037 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		52FC058B23D766E300CB983F /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		5263418923D8F8DF00C2660E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				52E9CB4223DF6C9200E6F037 /* TrackCell.xib */,
+				52B1D65823E0C763006F304F /* TrackCell.xib */,
 				5263418A23D8F90A00C2660E /* TrackCell.swift */,
 			);
 			path = Cell;
@@ -262,7 +262,7 @@
 				524765CA23D4E74500584D08 /* LaunchScreen.storyboard in Resources */,
 				52E9CB4523DF6CC200E6F037 /* TrackDetailView.xib in Resources */,
 				524765C723D4E74500584D08 /* Assets.xcassets in Resources */,
-				52E9CB4323DF6C9200E6F037 /* TrackCell.xib in Resources */,
+				52B1D65923E0C763006F304F /* TrackCell.xib in Resources */,
 				52DD547D23D7A5AD00998A3D /* SearchViewController.storyboard in Resources */,
 				524765C523D4E74200584D08 /* Main.storyboard in Resources */,
 			);
