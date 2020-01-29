@@ -10,7 +10,7 @@ import UIKit
 import SDWebImage
 import AVKit
 
-protocol TrackMovingDelegate: class {
+protocol TrackMovingDelegate {
     func moveBackForPreviousTrack() -> SearchViewModel.Cell?
     func moveForwardForPreviousTrack() -> SearchViewModel.Cell?
 }
@@ -36,12 +36,12 @@ class TrackDetailView: UIView {
     @IBOutlet weak var volumeSlider: UISlider!
     
     let player: AVPlayer = {
-       let avPlayer = AVPlayer()
+        let avPlayer = AVPlayer()
         avPlayer.automaticallyWaitsToMinimizeStalling = false
         return avPlayer
     }()
     
-    weak var delegate: TrackMovingDelegate?
+    var delegate: TrackMovingDelegate?
     weak var tabBarDelegate: MainTabBarControllerDelegate?
     
     // MARK: - awakeFromNib
@@ -83,7 +83,7 @@ class TrackDetailView: UIView {
         miniTrackView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
         addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handleDismissalPan)))
     }
-
+    
     private func playTrack(previewUrl: String?) {
         print("Пытаюсь включить трек по ссылке: \(previewUrl ?? "Отсутствует")")
         
@@ -237,7 +237,7 @@ class TrackDetailView: UIView {
     @IBAction func dragDownButtonTapped(_ sender: Any) {
         
         self.tabBarDelegate?.minimizeTrackDetailController()
-//        self.removeFromSuperview()
+        //        self.removeFromSuperview()
     }
     
     @IBAction func previousTrack(_ sender: Any) {
