@@ -53,7 +53,7 @@ class SearchViewController: UIViewController, SearchDisplayLogic {
     
     setupTableView()
     setupSearchBar()
-    searchBar(searchController.searchBar, textDidChange: "billie")
+    searchBar(searchController.searchBar, textDidChange: "")
   }
     
     override func viewWillAppear(_ animated: Bool) {
